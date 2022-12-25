@@ -1,0 +1,31 @@
+/* PURCHASE */
+
+.purchase__wrapper {
+    background: url("../../img/backgrounds/purshase-now-bg.png") no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 476px;
+}
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 125px 0;
+}
+
+.purchase__title {
+    color: var(--green);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.purchase__description {
+    color: #D8D8D8;
+    line-height: 4;
+    margin-bottom: 60px;
+}

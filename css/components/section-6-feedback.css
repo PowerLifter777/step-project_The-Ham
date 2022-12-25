@@ -1,0 +1,240 @@
+/* FEEDBACK */
+
+.users-feedback__wrapper {
+    background: url("../../img/backgrounds/feedback.png") no-repeat center;
+    background-size: cover;
+    height: 850px;
+    user-select: none;
+    overflow: hidden;
+}
+
+.section__feedback {
+    padding: 95px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+
+.user-info__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27px;
+    animation: slide 1s ease-out;
+    position: relative;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        bottom: 100%;
+    }
+
+    15% {
+        opacity: 0.5;
+        bottom: -15%;
+    }
+
+    40% {
+        opacity: 0.7;
+        bottom: 3%;
+    }
+
+    50% {
+        opacity: 0.9;
+        bottom: -2%;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+.feedback__title {
+    color: #ffffff;
+    margin-bottom: 65px;
+}
+
+.quotes-svg {
+    fill: var(--green);
+    width: 47px;
+    height: 33px;
+}
+
+.user-feedback__post {
+    color: #BBBBBB;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.user__name {
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+    line-height: 27px;
+}
+
+.user__proffesion {
+    font-size: 13px;
+    color: #BBBBBB;
+    line-height: 27px;
+}
+
+.user__photo {
+    height: 166px;
+    width: 166px;
+    border: 10px solid rgba(31, 218, 181, 0.2);
+    border-radius: 50%;
+}
+
+/* SLIDER */
+
+.feedback-slider__wrapper {
+    width: 485px;
+    min-height: 100px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.slider-foto__wrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 0 10px;
+    margin: 0 20px;
+}
+
+.feedback-slider__controls {
+    height: 31px;
+    width: 31px;
+    border: 1px solid rgba(187, 187, 187, 0.8);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    position: relative;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.slider__control--next::before,
+.slider__control--prev::before {
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-left: 2px solid rgba(187, 187, 187, 0.8);
+    border-top: 2px solid rgba(187, 187, 187, 0.8);
+    left: 57%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    transition: border-color 0.3s ease-in;
+}
+
+.feedback-slider__controls:active {
+    transform: scale(0.9);
+}
+
+.feedback-slider__controls.hide {
+    visibility: hidden;
+}
+
+.slider__control--next::before {
+    left: 43%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.feedback-slider__controls:hover {
+    background-color: var(--green);
+}
+
+.feedback-slider__controls:hover::before,
+.feedback-slider__controls:hover::after {
+    border-color: white;
+}
+
+.feedback-slider__items {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-slider__item {
+    height: 100px;
+    width: 70px;
+    cursor: pointer;
+    bottom: 0;
+    position: relative;
+    left: 0;
+    transition: left .4s ease-out, bottom 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-slider__item.selected img {
+    bottom: 13px;
+    animation: pulse 1.5s ease-out infinite .5s;
+}
+
+.feedback-slider__item:not(.selected):hover img {
+    animation: shake 1.2s ease-out infinite;
+}
+
+@keyframes shake {
+    0% {
+        bottom: 0px;
+    }
+
+    15% {
+        bottom: 13px;
+    }
+
+    30% {
+        bottom: 7px;
+    }
+
+    45% {
+        bottom: 13px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        border: 5px solid rgba(31, 218, 181, 0.2);
+    }
+
+    30% {
+        border: 5px solid rgba(255, 255, 255, 0.4);
+    }
+
+    45% {
+        border: 5px solid rgba(255, 255, 255, 0.4);
+    }
+
+    100% {
+        border: 5px solid rgba(31, 218, 181, 0.2);
+    }
+}
+
+.feedback-slider__item img {
+    height: 70px;
+    width: 70px;
+    border: 5px solid rgba(31, 218, 181, 0.2);
+    border-radius: 50%;
+    position: relative;
+}

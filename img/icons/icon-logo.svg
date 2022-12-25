@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="67" viewBox="0 0 58 67">
+    <defs>
+        <path id="zg8ta" d="M447 77.82L418.49 95l-29-16.33-.49-33.5L417.51 28l29 16.32z"/>
+    </defs>
+    <g>
+        <g transform="translate(-389 -28)">
+            <use fill="#18cfab" xlink:href="#zg8ta"/>
+        </g>
+    </g>
+</svg>

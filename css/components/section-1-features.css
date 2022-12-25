@@ -1,0 +1,37 @@
+/*  FEATURES  */
+
+.features__list {
+    background-color: var(--green);
+    display: flex;
+    margin-top: 8px;
+    height: 377px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.features__list .feature__item:nth-child(2n+1) {
+    background-color: #1C2A33;
+    color: var(--green);
+    fill: currentColor;
+}
+
+.features__list .feature__item:nth-child(2n) {
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.feature__item {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 95px 0 110px;
+    text-align: center;
+}
+
+.feature__item svg {
+    height: 100px;
+    width: 102px;
+}

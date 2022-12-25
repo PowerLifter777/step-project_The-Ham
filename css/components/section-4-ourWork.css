@@ -1,0 +1,123 @@
+/* OUR-WORK  */
+
+.work-example__wrapper {
+    padding: 95px 0;
+    background-color: #E9EDEF;
+}
+
+.work-example {
+    gap: 70px;
+}
+
+.work-example__title {
+    margin-bottom: 30px;
+}
+
+.work-example__menu-item {
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 58px;
+    border: 1px solid #DADADA;
+    padding: 0 16px;
+    min-width: 75px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    height: 58px;
+}
+
+.work-example__menu-list {
+    min-width: 700px;
+}
+
+.work-example__menu-item:hover {
+    border: 2px solid var(--green);
+    transform: scale(0.95);
+    padding: 0 15px;
+}
+
+.work-example__menu-item.active {
+    border: 2px solid var(--green);
+    transform: scale(0.95);
+    padding: 0 15px;
+}
+
+.work-example__items {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(3, 215px) / repeat(4, 1fr);
+    grid-auto-rows: 215px;
+}
+
+.work-example__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s ease-out;
+    animation: fadeIn .5s ease-out;
+}
+
+.work-example__img:hover {
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.work-example__link {
+    position: relative;
+}
+
+.hover__layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 0;
+    line-height: 20px;
+    border-top: 3px solid var(--green);
+    height: 100%;
+    width: 100%;
+    background-color: #E9EDEF;
+    position: absolute;
+}
+
+.hover__layout-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.hover__layout-category {
+    font-size: 12px;
+    font-weight: 300;
+    color: #8A8A8A;
+    text-transform: capitalize;
+}
+
+.hover__layout-svg {
+    width: 90px;
+    height: 45px;
+    margin-bottom: 40px;
+}
+
+.load__controls {
+    position: relative;
+}
+
+.work-example__btn {
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.work-example__btn.hide {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.plus-svg {
+    fill: currentColor;
+    height: 18px;
+    width: 18px;
+}
