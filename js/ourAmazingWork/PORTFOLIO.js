@@ -62,11 +62,7 @@ export const PORTFOLIO = () => {
             }
         })
     }
-
-    function checkLoadBtn(arr, maxItems = 12) {
-        arr.length <= maxItems ? btnLoad.classList.add('hide') : btnLoad.classList.remove('hide');
-    }
-
+    
     function tabActivation(e) {
         [...tabsList.children].forEach(tab => {
             if (tab === e.target && !tab.classList.contains('active')) {
@@ -81,14 +77,14 @@ export const PORTFOLIO = () => {
             } else if (tab !== e.target) tab.classList.remove("active");
         });
     }
-
+    
     function displayItems(clicks = 0, amount = 12) {
         const minInd = clicks * amount;
         const maxInd = (clicks + 1) * amount;
         filteredArr.slice(minInd, maxInd).forEach((el, i) => setTimeout(() => loadImagesToPage([el]), 50 * i));
         checkLoadBtn(filteredArr, maxInd);
     }
-
+    
     let count = 1;
     function showMore(max) {
         loader.classList.add('active');
@@ -106,7 +102,10 @@ export const PORTFOLIO = () => {
             }
         }, 2000)
     }
-
+    
+    function checkLoadBtn(arr, maxItems = 12) {
+        arr.length <= maxItems ? btnLoad.classList.add('hide') : btnLoad.classList.remove('hide');
+    }
 }
 
 

@@ -1,19 +1,19 @@
 /* HEADER */
 
 .header {
-    color: #ffffff;
-    width: 100%;
+    min-height: 100vh;
     background: url("../../img/backgrounds/header-bg.png") no-repeat center;
     background-size: cover;
-    overflow: auto;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    background-attachment: fixed;
+    color: #ffffff;
 }
 
 .header-top__wrapper {
     height: 120px;
     background-color: rgba(94, 93, 88, 0.6);
+    width: 100%;
 }
 
 .header-top {
@@ -176,4 +176,3 @@
     gap: 30px;
     margin-bottom: 245px;
 }
-

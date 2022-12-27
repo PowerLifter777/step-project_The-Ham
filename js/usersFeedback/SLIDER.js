@@ -31,15 +31,15 @@ export const SLIDER = () => {
         disableBtn(prevBtn);
         nextBtn.classList.remove('hide');
         moveSlider(deltaPx);
-        images[0].style.left.slice(0, -2) === '0' && prevBtn.classList.add('hide');;
+        images[0].style.left.slice(0, -2) === '0' && prevBtn.classList.add('hide');
         setTimeout(() => setActiveBtn(prevBtn), 800);
     }
 
-    function showNext(deltaPx = 100) {
+    function showNext() {
         disableBtn(nextBtn);
         prevBtn.classList.remove('hide');
         moveSlider(-deltaPx);
-        images[0].style.left.slice(0, -2) === `${maxDeltaPx}` && nextBtn.classList.add('hide');;
+        images[0].style.left.slice(0, -2) === `${maxDeltaPx}` && nextBtn.classList.add('hide');
         setTimeout(() => setActiveBtn(nextBtn), 800);
     };
 
