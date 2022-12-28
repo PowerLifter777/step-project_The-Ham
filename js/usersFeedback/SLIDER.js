@@ -105,7 +105,7 @@ export const SLIDER = () => {
     function selectUserFeedback(e) {
         const target = e.target.closest('.feedback-slider__item');
         const dataName = target !== null && target.dataset['user'];
-        images.forEach(img => e.target.parentNode === img ? img.classList.add('selected') : img.classList.remove('selected'))
+        images.forEach(img => target === img ? img.classList.add('selected') : img.classList.remove('selected'));
         users.forEach(user => user.name === dataName && addUserFeedback(user));
     }
 
