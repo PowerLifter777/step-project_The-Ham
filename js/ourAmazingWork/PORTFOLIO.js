@@ -7,10 +7,11 @@ export const PORTFOLIO = () => {
 
     loadTabsToPage();
 
-    const gridItemsWrapper = document.body.querySelector('.work-example__items');
-    const btnLoad = document.body.querySelector('.work-example__btn');
-    const tabsList = document.body.querySelector('.work-example__menu-list');
-    const loader = document.body.querySelector('.triple-spinner');
+    const section = document.body.querySelector('.work-example__wrapper');
+    const gridItemsWrapper = section.querySelector('.work-example__items');
+    const btnLoad = section.querySelector('.work-example__btn');
+    const tabsList = section.querySelector('.work-example__menu-list');
+    const loader = section.querySelector('.triple-spinner');
 
     tabsList.addEventListener('click', (e) => tabActivation(e));
     btnLoad.addEventListener('click', () => showMore(2));
@@ -19,8 +20,8 @@ export const PORTFOLIO = () => {
     loadImagesToPage(filteredArr);
 
     let gridItems;
-    document.body.addEventListener('mouseover', (e) => {
-        gridItems = document.body.querySelectorAll('.work-example__link');
+    section.addEventListener('mouseover', (e) => {
+        gridItems = section.querySelectorAll('.work-example__link');
         addHoverLayout(e, gridItems)
     })
 

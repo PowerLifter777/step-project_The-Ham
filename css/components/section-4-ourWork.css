@@ -103,19 +103,6 @@
     position: relative;
 }
 
-.work-example__btn {
-    box-shadow: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.work-example__btn.hide {
-    /* visibility: hidden; */
-    display: none;
-}
-
 .plus-svg {
     fill: currentColor;
     height: 18px;
