@@ -6,10 +6,9 @@ export const GALLERY = () => {
     const imgWrappers = section.querySelectorAll('.gallery__item');
     const btnLoad = section.querySelector('.gallery__btn');
 
-    btnLoad.addEventListener('click', () => showMore(3));
+    btnLoad.addEventListener('click', () => showMore(2));
     const loader = section.querySelector('.triple-spinner');
 
-    const loadValue = 18;
     function loadImages(imgArr) {
         [...imgWrappers].forEach((el, i) => !!imgArr[i] && el.insertAdjacentHTML('beforeend', `
         <a href="${imgArr[i].path}" target="_blank">
@@ -36,8 +35,6 @@ export const GALLERY = () => {
 
         [...cloneImgWrappers].forEach(el => !el.innerHTML && el.remove());
         let imgBlocks = clon2.querySelectorAll('.img-block');
-        console.log(arr);
-        console.log(imgBlocks);
 
         imgBlocks = [...imgBlocks].filter(block => !!block.children.length);
         imgBlocks = [...imgBlocks].sort(() => Math.random() - 0.5);
