@@ -7,13 +7,15 @@
 .triple-spinner.active {
     display: block;
     position: relative;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 110px;
     border-radius: 50%;
-    border: 4px solid transparent;
+    /* border: 4px solid transparent; */
     border-top: 4px solid #076f7f;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+    bottom: 80px;
+    left: 35px;
 }
 
 .triple-spinner::before,
@@ -21,7 +23,7 @@
     content: "";
     position: absolute;
     border-radius: 50%;
-    border: 4px solid transparent;
+    border-top: 4px solid transparent;
 }
 
 .triple-spinner::before {

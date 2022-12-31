@@ -72,7 +72,7 @@
 .tabs__wrapper {
     transform: translate(0, -150%);
     opacity: 0;
-    transition: opacity 1s ease-out 1s, transform 1s ease-out 1s;
+    transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s;
 }
 
 .work-example__items a {
