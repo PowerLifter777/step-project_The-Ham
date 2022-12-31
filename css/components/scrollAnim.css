@@ -131,7 +131,7 @@
 /* BREAKING NEWS */
 
 .breaking-news__content .breaking-news__post {
-    transition: opacity 2s ease-out 0.5s, transform 1.5s ease-out;
+    transition: opacity 2s ease-out 0.25s, transform 1.5s ease-out;
 }
 
 .breaking-news__content .breaking-news__post:nth-child(1),
