@@ -21,17 +21,19 @@
     font-weight: 300;
     color: #777777;
     gap: 15px;
-    animation: fadeIn 1s ease;
+    animation: fadeIn 1s ease-out;
     opacity: 1;
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
+        transform: translate(0%, 20%);
     }
 
-    to {
+    100% {
         opacity: 1;
+        transform: translate(0, 0);
     }
 }
 

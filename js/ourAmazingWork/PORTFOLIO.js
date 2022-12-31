@@ -99,13 +99,13 @@ export const PORTFOLIO = () => {
                 displayItems(count);
                 loader.classList.remove('active');
                 checkLoadBtn([], max);
-                count++
+                count++;
             }
         }, 2000)
     }
     
     function checkLoadBtn(arr, maxItems = 12) {
-        arr.length <= maxItems ? btnLoad.classList.add('hide') : btnLoad.classList.remove('hide');
+        arr.length <= maxItems ? btnLoad.classList.add('hide') : btnLoad.classList.remove('hide'); 
     }
 }
 

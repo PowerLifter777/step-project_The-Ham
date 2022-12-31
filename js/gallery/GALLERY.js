@@ -70,7 +70,7 @@ export const GALLERY = () => {
                 checkLoadBtn([], max);
                 count++
             }
-        }, 1000)
+        }, 2000)
     }
 
     function checkLoadBtn(arr, maxItems = 18) {

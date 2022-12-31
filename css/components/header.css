@@ -144,9 +144,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 250px;
+    padding-top: 150px;
     font-weight: 700;
     gap: 130px;
+    flex: 1 1 auto;
+    overflow-x: hidden;
 }
 
 .slogan--top {
