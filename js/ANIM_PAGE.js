@@ -34,6 +34,6 @@ export const ANIM_PAGE = () => {
             }
         }
 
-        setTimeout(() => animOnScroll(), 500);
+        setTimeout(() => animOnScroll(), 300);
     }
 }
